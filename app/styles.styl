@@ -1,0 +1,100 @@
+.submit-btn
+  border none
+  background red
+  width 100%
+  display flex
+  align-items center
+  justify-content center
+  height 3rem
+  position relative
+  z-index 99
+  background #d95b5b
+  color white
+  text-shadow 1px 1px 0 rgba(0,0,0,.2)
+  text-transform uppercase
+  font-size 1.5rem
+
+.config-one
+  .scroll-container
+    background #3F51B5
+
+  .selected
+    background #283593
+
+.config-two
+  .scroll-container
+    background #673AB7
+
+  .selected
+    background #4527A0
+
+  .title
+    cursor pointer
+
+.blocker
+  background rgba(0,0,0,.5)
+  position absolute
+  height 3rem
+  left 5rem
+  width calc(100% - 5rem)
+
+.values-container
+  display flex
+  border-bottom 1px solid #212121
+  position relative
+
+  .title
+    display flex
+    align-items center
+    justify-content center
+    height 3rem
+    flex 0 0 5rem
+    background #3a3c47
+    text-shadow 1px 1px 0 #000
+    color #ffffffde
+    border-right 1px solid rgba(0,0,0,.5)
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    &.selected
+      color gold
+
+.scroll-container
+  color #ffffffde
+  display flex
+  height 3rem
+  width 100%
+  overflow auto
+
+  .value
+    flex 0 0 5rem
+    border-right 1px solid rgba(0,0,0,.5)
+    display flex
+    align-items center
+    justify-content center
+
+    &.selected
+      font-size 1.5rem
+
+.results
+  display flex
+  flex-direction column
+  position relative
+  z-index 1
+  min-height calc(100vh - 18rem - 6px)
+  width 100%
+
+  div
+    background #3a3c47
+    text-shadow 1px 1px 0 #000
+    color #ffffffde
+    flex 1
+    display flex
+    align-items center
+    justify-content center
+    text-transform uppercase
+    font-size 3rem
+    border-bottom 1px solid rgba(0,0,0,.5)
+
+    .title
+      font-size 1.5rem
+      margin-left 1rem
